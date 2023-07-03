@@ -1,31 +1,21 @@
 //- include preload.pug
 header
 	.main-grid
-		.col-2.col-xs-4.logo-container.vertical-align
-			a.logo(href="#") 
-				img(src="/images/logo.jpg", alt="")
-		.col-5.vertical-align
+		.col-4.vertical-align
 			nav.nav-header
 				ul.ln
 						li 
-							a(href="#") Главная
+							a(href="#") Поддержка
 						li 
-							a(href="#") О компании
-								i
-							ul 
-								li 
-									a(href="#") О нас 
-								li 
-									a(href="#") Блог
+							a(href="#") Безопасность
 						li 
-							a(href="#") контакты
-		.col-5.col-xs-4.vertical-align.feedback-header
-			div
-				a.phone-btn(href="#") 
-					i
-					span + 971 56 115 16 24
-			div
-				a.btn-header.btn.btn--blue.element-btn(data-element="1" href="#") Перезвонить мне
-			+social(["fc","i"])
+							a(href="#") О Нас
+		.col-1
+		.col-2.logo-container
+			a.logo(href="#") 
+				img(src="/images/logo.svg", alt="")
+		.col-5.vertical-align
+			.btn-container 
+				a(href="#").btn.btn-out.btn--white Войти
 
 

@@ -10,7 +10,19 @@
 	.file-input-item,
 	.file-decorate
 		height: 100%
+	.file-decorate
+		span
+			top: 50%
+
+			position: relative
+			z-index: 1
+			color: $whiteColor
+			&::before
+				left: 50%
+				transform: translateX(-50%)
+				top: 24px
+				display: inline-block
+				@include bgImageEl("../images/icons/plus-white.svg")
 .input-file-user
-	@include positionElement(100%, 50%, 0, 50%)
-	@include bgImageEl("../images/icons/avatar-black.svg")
-	opacity: 0.5
+	@include positionElement(100%, 100%, 0, 0%)
+	@include bgImageEl("../images/icons-app/avatar-face.svg")

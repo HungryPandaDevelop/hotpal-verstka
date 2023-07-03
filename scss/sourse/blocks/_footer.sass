@@ -1,14 +1,11 @@
 
 footer
+  padding: 45px 0 15px
   position: relative
-
+  overflow: hidden
   background-color: $whiteColor
-  color: $blueColor
+  color: $blackColor
   font-size: $smallSize
-
-  .main-grid
-    border-top: 1px solid $grayColorSecond
-    padding: 70px 15px 30px
   ul,li
     list-style: none
     padding: 0
@@ -16,41 +13,25 @@ footer
   a
     text-decoration: none
     &:hover
-      color: $goldColor
-
-  .logo-text
-    font-size: $smallSize
-    margin: 0 0 45px
-
-  .footer-links
-    display: flex
-    justify-content: space-between
-    li
-      margin-bottom: 11px
-
-  .social
-    margin-top: 15px
-
+      color: $blueColor
+  h3
+    font-size: 20px
+    margin: 0 0 15px
   .nav
     font-size: $standartSize
     margin-bottom: 50px
     li
       margin-bottom: 12px
-  .nav-second
-    text-transform: uppercase
-    a
-      font-weight: 600
-
-  h3
-    font-size: $mediumSize
-    color: inherit
-    margin: 0 0 13px
-    text-transform: uppercase
-    a
-      font-weight: 600
-
-.feedback-footer-item
-  display: flex
-  margin: 0 0 15px
-  i
-    margin-right: 10px
+.footer-text
+  p
+    margin: 0 0 30px
+.footer-bottom
+  margin-top: 30px
+  ul
+    display: flex
+    justify-content: space-between
+    gap: 15px
+  li
+    display: inline-block
+.footer-copyright
+  text-align: right
