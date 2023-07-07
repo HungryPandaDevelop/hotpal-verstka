@@ -1,4 +1,4 @@
-include ../default/build-header
+include ../../default/build-header
 	.main-full
 		| header
 	.main-full
@@ -10,8 +10,8 @@ include ../default/build-header
 				span Назад
 			h3 Загрузите ваши фотографии
 			h4 Вы можете загрузить до 10 фотографий 
-			.form
-				.input-box
+			.form.main-grid
+				.input-box.col-12
 					.dragdrop-container
 						span Нажмите и загрузите фотографии, либо же  перетяните в это окно
 					.dragdrop-uploaded
@@ -19,4 +19,5 @@ include ../default/build-header
 							.dragdrop-file-img
 								img(src="https://zoo-base.sait.website/wp-content/uploads/2023/06/2.jpg")
 							i
-				+inputSubmit('Делее', 'btn--blue') 
+				.col-12
+					+inputSubmit('Делее', 'btn--blue') 

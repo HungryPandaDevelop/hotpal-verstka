@@ -3,10 +3,6 @@
   gap: 30px
 
 .account-main
-  .input-photo
-    width: 360px
-    height: 480px
-    margin: 0 auto
   .file-decorate
     text-align: center
     span
@@ -27,9 +23,12 @@
   height: 1px
   background-color: $blackColor
 .user-location-map
-  border: 1px solid $blackColor
-  height: 200px
+  border: 1px solid $grayColor
+  height: 280px
   border-radius: 30px
+  position: relative
+  margin-top: 30px
+  overflow: hidden
 $userTagSize: 18px
 .portfel-ico
   @include icoEl($userTagSize, $userTagSize, "../images/icons-app/tags/portfel.svg")

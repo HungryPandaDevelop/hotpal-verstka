@@ -2,10 +2,10 @@ include ../../default/build-header
 include ../../blocks/header
 .stub
 .main-full 
-	.account-tabs-container
-		.account-tab.active Мой аккаунт
-		//- .account-tab Настройки
-	.border-container.account-main
+	.border-tabs-container
+		.border-tab.active Кабинет
+		.border-tab Настройки
+	.border-container.border-null-left.account-main
 		.main-grid
 			.col-8
 				.user-top-info
@@ -18,10 +18,12 @@ include ../../blocks/header
 					.input-box
 						label Пол
 						.switch-container
-							span М
+							span 
+								.man-ico
 							.switch-input
 								i
-							span Ж
+							span 
+								.woman-ico
 				.tags-add-container
 					.tags-container
 						h3 Цели:
@@ -56,9 +58,8 @@ include ../../blocks/header
 					.user-location-map
 			.col-4 
 				.input-box
-					.input-photo
-						+inputFile(0, 'Выбрать фото',)   
-						.input-file-user
+					.dragdrop-container   
+						span Выбрать фото
 			.col-12 
 				.border-delimetr.border-account
 			.col-8

@@ -1,11 +1,16 @@
 /*-photo-upload-*/
 
 .input-photo
-	width: 150px
-	height: 150px
+	width: 100%
+	height: 340px
 	position: relative
 	cursor: pointer
 	position: relative
+	overflow: hidden
+	border-radius: 30px
+	.input-photo-file
+		@include positionElement(100%,100%,0,0)
+		object-fit: cover
 	.input-file-container,
 	.file-input-item,
 	.file-decorate
@@ -23,6 +28,7 @@
 				top: 24px
 				display: inline-block
 				@include bgImageEl("../images/icons/plus-white.svg")
-.input-file-user
-	@include positionElement(100%, 100%, 0, 0%)
-	@include bgImageEl("../images/icons-app/avatar-face.svg")
+
+	.file-decorate
+		@include positionElement(100%, 100%, 0, 0%)
+		@include bgImageEl("../images/icons-app/avatar-face.svg")

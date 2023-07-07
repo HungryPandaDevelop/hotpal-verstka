@@ -22,13 +22,48 @@ $icoOffset: 8px
 		@include icoEl($icoSize, $icoSize, "../images/social/whatsapp-black.svg")
 		margin-right: $icoOffset
 
-.phone-btn
+.phone--btn
 	border-color: $blackColor
 	i,span
 		display: inline-block
 		vertical-align: middle
 	i
-		@include icoEl($icoSize, $icoSize, "../images/icons/phone-black.svg")
+		@include icoEl($icoSize, $icoSize, "../images/icons-app/phone-btn.svg")
+		margin-right: $icoOffset
+.reg-btn
+	font-size: $standartSize
+	padding: 5px 12px 6px
+	text-align: left
+	max-width: 360px
+	margin: 0 auto 8px
+	display: block
+	&:hover
+		border-color: $blueColor
+.google--btn
+	border-color: $blackColor
+	i,span
+		display: inline-block
+		vertical-align: middle
+	i
+		@include icoEl($icoSize, $icoSize, "../images/icons-app/google-color.svg")
+		margin-right: $icoOffset
+.mail--btn
+	border-color: $blackColor
+	i,span
+		display: inline-block
+		vertical-align: middle
+	i
+		background-color: $blueColorSecond
+		@include icoEl($icoSize, $icoSize, "../images/icons-app/e-mail-white.svg", middle, 18px)
+		margin-right: $icoOffset
+		border-radius: 100%
+.vk--btn
+	border-color: $blackColor
+	i,span
+		display: inline-block
+		vertical-align: middle
+	i
+		@include icoEl($icoSize, $icoSize, "../images/icons-app/vk-color.svg")
 		margin-right: $icoOffset
 .link--back
 	cursor: pointer
