@@ -1,0 +1,37 @@
+.settings-tabs-container
+  display: flex
+  justify-content: space-between
+  font-weight: 700
+  cursor: pointer
+  border: 1px solid $grayColor
+  border-bottom: 0
+  border-top-right-radius: 30px
+  position: relative
+  overflow: hidden
+.settings-tab
+  border-left: 1px solid $grayColor
+  width: 34%
+  text-align: center
+  padding: 15px
+  &:first-child
+    border: 0
+  &.active,
+  &:hover
+    background-color: $grayColorSecond
+
+.userMini-item
+  display: flex
+  gap: 15px
+  .img-cover
+    width: 100px
+    height: 100px
+    position: relative
+    overflow: hidden
+    border-radius: 100%
+    margin-bottom: 8px
+
+.userMini-name
+  font-weight: 700
+  text-align: center
+.userMini-btn-container
+  margin-top: 30px

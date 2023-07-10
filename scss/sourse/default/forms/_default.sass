@@ -41,3 +41,10 @@ input
 		color: $blueColorSecond
 		margin: 0 0 8px
 		display: inline-block
+
+.data-input-container
+	position: relative
+	&::after
+		content: ""
+		@include positionElement(40px, 100%,0,0,right)
+		// outline: 1px solid red
