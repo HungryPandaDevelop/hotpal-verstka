@@ -83,3 +83,36 @@ input[type="range"]:active + .range-num
   input[type="range"]::-webkit-slider-thumb
     border: 1px solid $goldColor
     background-color: $whiteColor
+
+/*.irs--round .irs-line*/
+.irs--round .irs-line
+  top: 18px
+.irs--round .irs-bar
+  top: 18px
+.irs--round .irs-handle
+  top: 11px
+.irs-from, .irs-to, .irs-single
+  top: 30px
+.irs--round .irs-min, .irs--round .irs-max
+  top: 36px
+
+.irs--round .irs-bar,
+.irs--round .irs-single
+  background-color: $blueColor
+.irs--round .irs-from,
+.irs--round .irs-to
+  background: none
+  color: $blueColor
+  font-weight: 700
+  &::before
+    display: none
+.irs--round .irs-handle
+  border-color: $blueColor
+  width: 19px
+  height: 19px
+  background-color: $blueColor
+  cursor: pointer
+.irs--round .irs-min, .irs--round .irs-max
+  display: none
+.irs--round
+  height: auto

@@ -1,19 +1,19 @@
 $icoSize: 24px
 $icoOffset: 8px
 
-.close-btn
+.btn-close
 	@include icoEl($icoSize, $icoSize, "../images/icons/close-black.svg")
 	cursor: pointer
 	&:hover
 		background-image: url("../images/icons/close-blue.svg")
 
-.hamburger-btn
+.btn-hamburger
 	@include icoEl($icoSize, $icoSize, "../images/icons/hamburger-black.svg", middle, contain, center right)
 	cursor: pointer
 	&:hover
 		background-image: url("../images/icons/hamburger-gray.svg")
 
-.whatsapp-btn
+.btn-whatsapp
 	border-color: $blackColor
 	i,span
 		display: inline-block
@@ -22,7 +22,7 @@ $icoOffset: 8px
 		@include icoEl($icoSize, $icoSize, "../images/social/whatsapp-black.svg")
 		margin-right: $icoOffset
 
-.phone--btn
+.btn-phone
 	border-color: $blackColor
 	i,span
 		display: inline-block
@@ -30,7 +30,7 @@ $icoOffset: 8px
 	i
 		@include icoEl($icoSize, $icoSize, "../images/icons-app/phone-btn.svg")
 		margin-right: $icoOffset
-.reg-btn
+.btn-reg
 	font-size: $standartSize
 	padding: 5px 12px 6px
 	text-align: left
@@ -39,7 +39,7 @@ $icoOffset: 8px
 	display: block
 	&:hover
 		border-color: $blueColor
-.google--btn
+.btn-google
 	border-color: $blackColor
 	i,span
 		display: inline-block
@@ -47,7 +47,7 @@ $icoOffset: 8px
 	i
 		@include icoEl($icoSize, $icoSize, "../images/icons-app/google-color.svg")
 		margin-right: $icoOffset
-.mail--btn
+.btn-mail
 	border-color: $blackColor
 	i,span
 		display: inline-block
@@ -57,7 +57,7 @@ $icoOffset: 8px
 		@include icoEl($icoSize, $icoSize, "../images/icons-app/e-mail-white.svg", middle, 18px)
 		margin-right: $icoOffset
 		border-radius: 100%
-.vk--btn
+.btn-vk
 	border-color: $blackColor
 	i,span
 		display: inline-block
@@ -65,7 +65,7 @@ $icoOffset: 8px
 	i
 		@include icoEl($icoSize, $icoSize, "../images/icons-app/vk-color.svg")
 		margin-right: $icoOffset
-.link--back
+.link-back
 	cursor: pointer
 	i
 		@include icoEl($icoSize, $icoSize, "../images/arrows/carret-left-blue.svg", middle, 30px)
@@ -76,6 +76,23 @@ $icoOffset: 8px
 		color: $grayColor
 		i
 			background-image: url("../images/arrows/carret-left-gray.svg")
+
+$icoBtnSize: 50px
+.btn-ico
+	cursor: pointer
+	background-color: $whiteColor
+	border-radius: 100%
+	&:hover
+		background-color: $blueColor
+.btn-ico--like
+	@include icoEl($icoBtnSize, $icoBtnSize, "../images/icons-app/like-blue.svg", middle, 30px, center 13px)
+	&:hover
+		background-image: url("../images/icons-app/like-white.svg")
+.btn-ico--chat
+	background-color: $whiteColor
+	@include icoEl($icoBtnSize, $icoBtnSize, "../images/icons-app/chat-blue.svg", middle, 30px)
+	&:hover
+		background-image: url("../images/icons-app/chat-white.svg")
 
 .ico-in
 	border-color: $blackColor

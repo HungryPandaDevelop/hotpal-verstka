@@ -1,0 +1,25 @@
+.main-full 
+	.border-tabs-container
+		.border-tab.active Поиск по людям
+		.border-tab Поиск по отелям
+	.border-container.border-null-left.account-main.border-container-search
+		.main-grid
+			.input-box.col-2
+				label Пол
+				.switch-container
+					span 
+						.man-ico
+					.switch-input
+						i
+					span 
+						.woman-ico
+			.input-box.col-4 
+				label Возраст
+				.range-slider
+			.input-box.col-3 
+				label Город
+				+inputSelect('Выбрать селект', ['селект 1','селект 2','селект 3','селект 4','селект 5',])
+			.col-3 
+				.btn-container 
+					.btn.btn--blue-border Еще фильтры
+					.btn.btn--blue Найти
