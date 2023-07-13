@@ -2964,6 +2964,7 @@ footer .nav li {
 
 .border-container-search {
   padding: 15px 30px 20px;
+  margin: 0 0 45px;
 }
 .border-container-search .btn-container {
   display: -webkit-box;

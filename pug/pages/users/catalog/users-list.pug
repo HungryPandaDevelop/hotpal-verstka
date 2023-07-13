@@ -2,6 +2,9 @@ include ../../../default/build-header
 include ../../../blocks/header
 .stub
 include user-search-panel.pug
-
+.main-grid
+	-for(var a=0;a<=6;a++)
+		.col-4
+			+usersItem()
 .stub
 include ../../../blocks/footer
