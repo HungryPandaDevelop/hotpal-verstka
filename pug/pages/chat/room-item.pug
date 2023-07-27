@@ -1,0 +1,11 @@
+mixin roomItem(name, online, count, active)
+	.rooms-item(class=active)
+		.rooms-item-face.img-cover
+			img(src="/images/temp/avatar-1.jpg", alt="")
+		.rooms-item-name= name
+		if online
+			span.rooms-item-date= online
+		else 
+			span.rooms-item-online В сети
+		if count
+			.rooms-item-count 3
