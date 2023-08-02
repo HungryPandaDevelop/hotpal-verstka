@@ -885,51 +885,6 @@ section {
   background-image: url("../images/icons-app/chat-white.svg");
 }
 
-.ico-in {
-  border-color: #0B132B;
-  color: #3A506B;
-  padding: 6px 12px;
-}
-.ico-in i, .ico-in span {
-  vertical-align: middle;
-  display: inline-block;
-}
-.ico-in i {
-  width: 24px;
-  height: 24px;
-  position: relative;
-}
-.ico-in img {
-  width: 100%;
-  position: absolute;
-  height: 100%;
-  left: 0;
-  top: 0;
-}
-.ico-in .back-ico {
-  visibility: hidden;
-}
-.ico-in.active, .ico-in:hover {
-  text-decoration: none;
-  background-color: #00AEEF;
-  border-color: #00AEEF;
-  color: #ffffff;
-}
-.ico-in.active .back-ico, .ico-in:hover .back-ico {
-  visibility: visible;
-}
-.ico-in.active .front-ico, .ico-in:hover .front-ico {
-  visibility: hidden;
-}
-
-.ico-in--right i {
-  margin-left: 8px;
-}
-
-.ico-in--left i {
-  margin-right: 8px;
-}
-
 .spinner-container {
   position: relative;
   height: 30px;
@@ -2765,6 +2720,92 @@ header .hamburger-btn {
 .chat-popup-online {
   font-weight: 700;
   color: #00AEEF;
+}
+
+.invites-popup-item {
+  font-size: 14px;
+}
+.invites-popup-item .btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+.invites-popup-item .btn {
+  width: 50%;
+  padding: 0;
+}
+.invites-popup-item .btn i {
+  margin-right: 5px;
+}
+
+.invites-img {
+  width: 60px;
+  height: 60px;
+  background-image: url("../images/temp/avatar-1.jpg");
+  background-size: cover;
+  border-radius: 100%;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
+}
+
+.invites-info {
+  display: inline-block;
+  width: calc(100% - 105px);
+  vertical-align: top;
+}
+
+.invites-name {
+  font-weight: 700;
+}
+
+.invites-type i {
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  font-size: 0;
+  margin-right: 8px;
+  padding: 3px 0 0;
+}
+.invites-type i, .invites-type span {
+  vertical-align: middle;
+}
+
+.btn-apply i {
+  border: 1px solid #00AEEF;
+  border-radius: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-image: url("../images/icons/agree-lite-black.svg");
+}
+.btn-apply i:hover {
+  background-image: url("../images/icons/agree-lite-blue.svg");
+}
+
+.btn-dismiss i {
+  border: 1px solid #00AEEF;
+  border-radius: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-image: url("../images/icons/close-black.svg");
+}
+.btn-dismiss i:hover {
+  background-image: url("../images/icons/close-blue.svg");
 }
 
 .likes-popup {
