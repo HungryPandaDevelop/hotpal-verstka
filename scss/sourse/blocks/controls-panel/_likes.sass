@@ -1,0 +1,35 @@
+$icoSizePopup: 24px
+$icoSizeBgPopup: 18px
+.likes-popup
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  gap: 15px
+.like-popup-box
+  text-align: center
+.like-popup
+  width: 90px
+  height: 90px
+  background-image: url("../images/temp/avatar-1.jpg")
+  background-size: cover
+  border-radius: 100%
+  position: relative
+
+  display: inline-block
+  .btn-container
+    @include positionElement(100%, auto, 0, calc(100% - 15px))
+
+.like-popup-btn
+  @include icoEl($icoSizePopup, $icoSizePopup, "../images/icons-app/like-white-fill.svg", middle, $icoSizeBgPopup, center )
+  background-color: $blueColor
+  border-radius: 100%
+  cursor: pointer
+  &:hover
+    background-color: $whiteColor
+    background-image: url("../images/icons-app/like-blue-fill.svg")
+.close-popup-btn
+  @include icoEl($icoSizePopup, $icoSizePopup, "../images/icons/close-black.svg", middle, $icoSizeBgPopup, center )
+  background-color: $grayColorSecond
+  border-radius: 100%
+  cursor: pointer
+  &:hover
+    background-image: url("../images/icons/close-blue.svg")

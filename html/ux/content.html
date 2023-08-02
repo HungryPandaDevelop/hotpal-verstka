@@ -21,45 +21,57 @@
     <!-- header start-->
     <!--include ../blocks/header.pug-->
     <!-- header end-->
-    <div class="main-full">header</div>
-    <div class="main-full">
-        <div class="breadcrumbs"><a href="#">Главная</a><em>/</em><span>Link</span></div>
-      <h1>Content</h1>
+    <div class="controls-panel">
+      <div class="controls-btn controls-chat"><i></i><span>10</span></div>
+      <div class="controls-btn controls-like"><i></i></div>
+      <div class="controls-btn controls-invite"><i></i></div>
+      <div class="controls-btn controls-search"><i></i></div>
+      <div class="controls-btn controls-settings"><i></i></div>
     </div>
-    <div class="content"> 
+    <div class="controls-panel-popup">
+      <div class="controls-panel-head">Симпатии</div>
+      <div class="panel-deg panel-deg--active-1"></div>
+      <div class="invites-popup"></div>
+      <div class="main-full">header</div>
       <div class="main-full">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, neque soluta, illo ipsa ullam id fugiat, quibusdam vitae consequuntur non quos. Praesentium harum qui accusamus nesciunt iste architecto animi deserunt.</p>
+          <div class="breadcrumbs"><a href="#">Главная</a><em>/</em><span>Link</span></div>
+        <h1>Content</h1>
       </div>
-      <div class="main-grid">
-        <div class="col-4">
-           col-4</div>
-        <div class="col-4">
-           col-4</div>
-        <div class="col-4">
-           col-4</div>
-        <div class="col-4">
-           col-4</div>
-        <div class="col-4">
-           col-4</div>
-        <div class="col-4">
-           col-4</div>
-        <div class="col-4">
-           col-4</div>
+      <div class="content"> 
+        <div class="main-full">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, neque soluta, illo ipsa ullam id fugiat, quibusdam vitae consequuntur non quos. Praesentium harum qui accusamus nesciunt iste architecto animi deserunt.</p>
+        </div>
+        <div class="main-grid">
+          <div class="col-4">
+             col-4</div>
+          <div class="col-4">
+             col-4</div>
+          <div class="col-4">
+             col-4</div>
+          <div class="col-4">
+             col-4</div>
+          <div class="col-4">
+             col-4</div>
+          <div class="col-4">
+             col-4</div>
+          <div class="col-4">
+             col-4</div>
+        </div>
+        <div class="main-full"> 
+            <!-- pagination-component start-->
+            <div class="pagination">
+              <li class="previous"><a class="disabled" href="#">Назад</a></li>
+              <li class="selected"><a> 1 </a></li>
+              <li><a href="#">2 </a></li>
+              <li><a href="#">3 </a></li>
+              <li><a class="pagination-dotted" href="#">...</a></li>
+              <li><a href="#">20</a></li>
+              <li class="next"><a href="#">Вперед</a></li>
+            </div>
+            <!-- pagination-component start-->
+        </div>
       </div>
-      <div class="main-full"> 
-          <!-- pagination-component start-->
-          <div class="pagination">
-            <li class="previous"><a class="disabled" href="#">Назад</a></li>
-            <li class="selected"><a> 1 </a></li>
-            <li><a href="#">2 </a></li>
-            <li><a href="#">3 </a></li>
-            <li><a class="pagination-dotted" href="#">...</a></li>
-            <li><a href="#">20</a></li>
-            <li class="next"><a href="#">Вперед</a></li>
-          </div>
-          <!-- pagination-component start-->
-      </div>
+      <div class="main-full">footer</div>
     </div>
-    <div class="main-full">footer</div>
   </body>
 </html>

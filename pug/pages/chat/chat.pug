@@ -1,4 +1,3 @@
-include room-item
 include ../../default/build-header
 include ../../blocks/header
 .stub
@@ -14,26 +13,7 @@ include ../../blocks/header
 					+roomItem('Ольга', false,false, ' active')
 					
 			.col-8
-				.chat-messages
-					.messages-container
-						.messages-item 
-							.messages-box Did you mail me
-							.messages-date 5.54 pm
-						.messages-item--answer 
-							.messages-box--answer Yes I Did...
-							.messages-date 7.54 pm
-						.messages-item 
-							.messages-box Okay, let me check
-							.messages-date 10.54 pm
-						.messages-item 
-							.messages-box Did you mail me
-							.messages-date 5.54 pm
-						.messages-item--answer 
-							.messages-box--answer Yes I Did...
-							.messages-date 7.54 pm
-						.messages-item 
-							.messages-box Okay, let me check
-							.messages-date 10.54 pm
+				include chat-messages
 				.chat-form
 					.main-grid 
 						.col-8

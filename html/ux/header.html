@@ -21,27 +21,39 @@
     <!-- header start-->
     <!--include ../blocks/header.pug-->
     <!-- header end-->
-    <header>
-      <div class="main-grid">
-        <div class="col-4 vertical-align">
-          <nav class="nav-header">
-            <ul class="ln">
-              <li> <a href="#">Поиск по людям</a></li>
-              <li> <a href="#">Поиск по отелям</a></li>
-              <li> <a href="#">О Нас</a></li>
-            </ul>
-          </nav>
+    <div class="controls-panel">
+      <div class="controls-btn controls-chat"><i></i><span>10</span></div>
+      <div class="controls-btn controls-like"><i></i></div>
+      <div class="controls-btn controls-invite"><i></i></div>
+      <div class="controls-btn controls-search"><i></i></div>
+      <div class="controls-btn controls-settings"><i></i></div>
+    </div>
+    <div class="controls-panel-popup">
+      <div class="controls-panel-head">Симпатии</div>
+      <div class="panel-deg panel-deg--active-1"></div>
+      <div class="invites-popup"></div>
+      <header>
+        <div class="main-grid">
+          <div class="col-4 vertical-align">
+            <nav class="nav-header">
+              <ul class="ln">
+                <li> <a href="#">Поиск по людям</a></li>
+                <li> <a href="#">Поиск по отелям</a></li>
+                <li> <a href="#">О Нас</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-1"></div>
+          <div class="col-2 logo-container"><a class="logo" href="#"> <img src="/images/logo.svg" alt=""></a></div>
+          <div class="col-5 vertical-align">
+            <div class="btn-container"> <a class="btn btn-out btn--white" href="#">Войти</a></div>
+          </div>
         </div>
-        <div class="col-1"></div>
-        <div class="col-2 logo-container"><a class="logo" href="#"> <img src="/images/logo.svg" alt=""></a></div>
-        <div class="col-5 vertical-align">
-          <div class="btn-container"> <a class="btn btn-out btn--white" href="#">Войти</a></div>
-        </div>
+      </header>
+      <div class="stub"></div>
+      <div class="main-full">
+        <h1>Header</h1>
       </div>
-    </header>
-    <div class="stub"></div>
-    <div class="main-full">
-      <h1>Header</h1>
     </div>
   </body>
 </html>

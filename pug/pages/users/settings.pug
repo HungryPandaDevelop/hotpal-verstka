@@ -1,10 +1,10 @@
-mixin userMiniItem()
-	.userMini-item
+mixin likedisItem()
+	.likedis-item
 			.img-cover-info
 				.img-cover
 					img(src="/images/temp/avatar-1.jpg", alt="")
-				.userMini-name Максим
-			.userMini-btn-container 
+				h3 Максим
+			.btn-container 
 				a.btn.btn--gray-border(href="#") Разблокировать 
 				
 include ../../default/build-header
@@ -73,7 +73,7 @@ include ../../blocks/header
 			//- ------------------
 			- for(var i=0;i<=6;i++ )
 					.col-4 
-						+userMiniItem()
+						+likedisItem()
 
 .stub
 include ../../blocks/footer

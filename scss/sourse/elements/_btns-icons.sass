@@ -6,6 +6,19 @@ $icoOffset: 8px
 	cursor: pointer
 	&:hover
 		background-image: url("../images/icons/close-blue.svg")
+.btn-trash
+	@include icoEl($icoSize, $icoSize, "../images/icons/trash-gray.svg", middle, 18px)
+	cursor: pointer
+	border: 1px solid $grayColor
+	border-radius: 100%
+	&:hover
+		background-image: url("../images/icons/trash-blue.svg")
+		border-color: $blueColor
+.btn-full
+	@include icoEl($icoSize, $icoSize, "../images/icons-app/full-black.svg", middle, 32px)
+	cursor: pointer
+	&:hover
+		background-image: url("../images/icons-app/full-blue.svg")
 
 .btn-hamburger
 	@include icoEl($icoSize, $icoSize, "../images/icons/hamburger-black.svg", middle, contain, center right)
@@ -66,15 +79,16 @@ $icoOffset: 8px
 		margin-right: $icoOffset
 .link-back
 	cursor: pointer
+	display: inline-block
 	i
-		@include icoEl($icoSize, $icoSize, "../images/arrows/carret-left-blue.svg", middle, 30px)
+		@include icoEl($icoSize, $icoSize, "../images/arrows/carret-left-black.svg", middle, 30px)
 		margin-right: 0
 	span
 		vertical-align: middle
 	&:hover
 		color: $grayColor
 		i
-			background-image: url("../images/arrows/carret-left-gray.svg")
+			background-image: url("../images/arrows/carret-left-blue.svg")
 
 $icoBtnSize: 50px
 .btn-ico
@@ -92,6 +106,15 @@ $icoBtnSize: 50px
 		background-image: url("../images/icons-app/like-blue-fill.svg")
 		&:hover
 			background-image: url("../images/icons-app/like-white-fill.svg")
+.btn-ico--dislike
+	@include icoEl($icoBtnSize, $icoBtnSize, "../images/icons-app/dislike-blue.svg", middle, 40px, center )
+	&:hover
+		background-image: url("../images/icons-app/dislike-white.svg")
+
+	&.active
+		background-image: url("../images/icons-app/dislike-blue-fill.svg")
+		&:hover
+			background-image: url("../images/icons-app/dislike-white-fill.svg")
 .btn-ico--chat
 	background-color: $whiteColor
 	@include icoEl($icoBtnSize, $icoBtnSize, "../images/icons-app/chat-blue.svg", middle, 40px)

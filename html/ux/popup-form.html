@@ -21,39 +21,51 @@
     <!-- header start-->
     <!--include ../blocks/header.pug-->
     <!-- header end-->
-    <div class="main-full">header</div>
-    <div class="main-full">
-      <h1>Popup</h1>
+    <div class="controls-panel">
+      <div class="controls-btn controls-chat"><i></i><span>10</span></div>
+      <div class="controls-btn controls-like"><i></i></div>
+      <div class="controls-btn controls-invite"><i></i></div>
+      <div class="controls-btn controls-search"><i></i></div>
+      <div class="controls-btn controls-settings"><i></i></div>
     </div>
-      <div class="popup element-show show" data-element="1">
-        <div class="popup-overlay popup-overlay-js"></div>
-        <div class="popup-container"> 
-          <div class="close-btn close-btn--popup close-js"></div> 
-          <div class="form-default">
-            <h3>ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</h3>
-            <h4>Оставьте заявку, и мы свяжемся с вами в ближайшее время</h4>
-            <div class="form">
-              <div class="input-box">
-                <label>Text </label>
-                  <input class="input-decorate require" type="text" placeholder="Text">
-              </div>
-              <div class="input-box">
-                <label>Phone</label>
-                  <input class="input-decorate phone-mask require" type="text" placeholder="Phone">
-              </div>
-              <div class="input-box">
-                <div class="checkbox agreement">
-                  <label>Согласен (на) на обработку <a href="#">персональных данных </a>
-                    <input type="checkbox" checked><span></span>
-                  </label>
+    <div class="controls-panel-popup">
+      <div class="controls-panel-head">Симпатии</div>
+      <div class="panel-deg panel-deg--active-1"></div>
+      <div class="invites-popup"></div>
+      <div class="main-full">header</div>
+      <div class="main-full">
+        <h1>Popup</h1>
+      </div>
+        <div class="popup element-show show" data-element="1">
+          <div class="popup-overlay popup-overlay-js"></div>
+          <div class="popup-container"> 
+            <div class="close-btn close-btn--popup close-js"></div> 
+            <div class="form-default">
+              <h3>ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</h3>
+              <h4>Оставьте заявку, и мы свяжемся с вами в ближайшее время</h4>
+              <div class="form">
+                <div class="input-box">
+                  <label>Text </label>
+                    <input class="input-decorate require" type="text" placeholder="Text">
                 </div>
-              </div>
-                <div class="form-btn-container">
-                  <input class="btn btn--blue" type="submit" value="отправить">
+                <div class="input-box">
+                  <label>Phone</label>
+                    <input class="input-decorate phone-mask require" type="text" placeholder="Phone">
                 </div>
+                <div class="input-box">
+                  <div class="checkbox agreement">
+                    <label>Согласен (на) на обработку <a href="#">персональных данных </a>
+                      <input type="checkbox" checked><span></span>
+                    </label>
+                  </div>
+                </div>
+                  <div class="form-btn-container">
+                    <input class="btn btn--blue" type="submit" value="отправить">
+                  </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+    </div>
   </body>
 </html>
