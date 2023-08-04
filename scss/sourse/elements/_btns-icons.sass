@@ -97,6 +97,16 @@ $icoBtnSize: 50px
 	border-radius: 100%
 	&:hover
 		background-color: $blueColor
+.btn-ico--favorites
+	@include icoEl($icoBtnSize, $icoBtnSize, "../images/icons/star-blue.svg", middle, 40px, center )
+	&:hover
+		background-image: url("../images/icons/star-white.svg")
+
+	&.active
+		background-image: url("../images/icons/star-fill-blue.svg")
+		&:hover
+			background-image: url("../images/icons/star-fill-white.svg")
+
 .btn-ico--like
 	@include icoEl($icoBtnSize, $icoBtnSize, "../images/icons-app/like-blue.svg", middle, 40px, center )
 	&:hover
@@ -106,6 +116,7 @@ $icoBtnSize: 50px
 		background-image: url("../images/icons-app/like-blue-fill.svg")
 		&:hover
 			background-image: url("../images/icons-app/like-white-fill.svg")
+
 .btn-ico--dislike
 	@include icoEl($icoBtnSize, $icoBtnSize, "../images/icons-app/dislike-blue.svg", middle, 40px, center )
 	&:hover
@@ -120,27 +131,3 @@ $icoBtnSize: 50px
 	@include icoEl($icoBtnSize, $icoBtnSize, "../images/icons-app/chat-blue.svg", middle, 40px)
 	&:hover
 		background-image: url("../images/icons-app/chat-white.svg")
-
-// .video-btn
-// 	cursor: pointer
-// 	span
-// 		border-radius: 100%
-// 		@include positionElement(76px, 76px, 50%, 50%)
-// 		transform: translateX(-50%) translateY(-50%)
-// 		border: 2px solid $yellowColor
-// 		transition: ease-out 0.5s
-// 	i
-// 		border-radius: 100%
-// 		@include positionElement(54px, 54px, 50%, 50%)
-// 		transform: translateX(-50%) translateY(-50%)
-// 		background-color: $yellowColor
-// 		@include bgImageEl("../images/icons/play-white.svg", 15px, 22px)
-// 		transition: ease-out 0.5s
-// 	&:hover
-// 		span
-// 			width: 80px
-// 			height: 80px
-// 		i
-// 			width: 50px
-// 			height: 50px
-// 			background-position: 19px

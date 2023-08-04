@@ -2,12 +2,18 @@ $icoSizePopup: 24px
 $icoSizeBgPopup: 18px
 .invites-popup-item
   font-size: $smallSize
+  margin: 0 0 8px
+  border-bottom: 1px solid $grayColorSecond
+  padding-bottom: 8px
   .btn-container
     display: flex
     gap: 15px
-  .btn
+  .btn-invite
     width: 50%
     padding: 0
+    text-align: left
+    cursor: pointer
+    font-weight: 700
     i
       margin-right: 5px
 .invites-img
@@ -26,7 +32,9 @@ $icoSizeBgPopup: 18px
   vertical-align: top
 .invites-name
   font-weight: 700
+  margin: 0 0 8px
 .invites-type
+  margin: 0 0 8px
   i
     display: inline-block
     border: 1px solid
@@ -40,16 +48,23 @@ $icoSizeBgPopup: 18px
   i,span
     vertical-align: middle
 .btn-apply
+  color: $blueColor
   i
     border: 1px solid $blueColor
     border-radius: 100%
-    @include icoEl($icoSizePopup, $icoSizePopup, "../images/icons/agree-lite-black.svg", middle, $icoSizeBgPopup)
-    &:hover
-      background-image: url("../images/icons/agree-lite-blue.svg")
+    @include icoEl($icoSizePopup, $icoSizePopup, "../images/icons/agree-lite-blue.svg", middle, $icoSizeBgPopup)
+  &:hover
+    color: $blueColorSecond
+    i
+      border-color: $blueColorSecond
+      background-image: url("../images/icons/agree-lite-black.svg")
 .btn-dismiss
   i
-    border: 1px solid $blueColor
+    border: 1px solid $grayColor
     border-radius: 100%
     @include icoEl($icoSizePopup, $icoSizePopup, "../images/icons/close-black.svg", middle, $icoSizeBgPopup)
-    &:hover
+  &:hover
+    color: $blueColorSecond
+    i
+      border-color: $blueColorSecond
       background-image: url("../images/icons/close-blue.svg")

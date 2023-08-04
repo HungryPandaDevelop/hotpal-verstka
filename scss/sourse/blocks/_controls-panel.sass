@@ -5,38 +5,45 @@
 .controls-chat
   i
     @include icoEl(40px,40px, '../images/icons-app/chat-black.svg')
+  &.active,
   &:hover
     i
       background-image: url('../images/icons-app/chat-white.svg')
 .controls-like
   i
     @include icoEl(40px,40px, '../images/icons-app/like-black.svg')
+  &.active,
   &:hover
     i
       background-image: url('../images/icons-app/like-white.svg')
 .controls-invite
   i
     @include icoEl(30px,30px, '../images/icons-app/invite-black.svg', middle, 28px)
+  &.active,
   &:hover
     i
       background-image: url('../images/icons-app/invite-white.svg')
 .controls-search
   i
     @include icoEl(30px,30px, '../images/icons-app/loop-black.svg', middle, 24px)
+  &.active,
   &:hover
     i
       background-image: url('../images/icons-app/loop-white.svg')
 .controls-settings
   i
     @include icoEl(40px,40px, '../images/icons-app/settings-black.svg', middle, 28px)
+  &.active,
   &:hover
     i
       background-image: url('../images/icons-app/settings-white.svg')
 .controls-btn
   padding: 10px 5px
+  width: 100%
   cursor: pointer
   text-align: center
   position: relative
+  &.active,
   &:hover
     background-color: $blueColor
     span
@@ -54,7 +61,7 @@
 .controls-panel-popup
   @include positionElement(360px, 600px, 90px, 130px, right, top, 3)
   background-color: $whiteColor
-  border-radius: 15px
+  border-radius: 0 0 15px 15px
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px
   padding: 15px
   .panel-deg
@@ -62,11 +69,11 @@
     background-color: $whiteColor
     transform: rotate(45deg)
     box-shadow: rgba(149, 157, 165, 0.1) 25px -5px 10px
-  .panel-deg--active-1
+  .panel-deg--chat
     top: 40px
-  .panel-deg--active-2
+  .panel-deg--like
     top: 100px
-  .panel-deg--active-3
+  .panel-deg--invite
     top: 155px
 .controls-panel-head
   background-color: $blueColor
@@ -77,3 +84,11 @@
   left: 0
   padding: 3px 15px 2px
   font-weight: 700
+.panel-close
+  @include bgImageEl("../images/icons/close-white.svg", 21px)
+  @include positionElement(28px, 28px, 0, 100%, right, bottom)
+  background-color: $blueColor
+  cursor: pointer
+  border-radius: 8px 8px 0 0
+  &:hover
+    background-color: $blueColorSecond

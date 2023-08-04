@@ -6,16 +6,23 @@
   position: relative
   overflow: hidden
 .rooms-item
-  // display: flex
+  position: relative
   border-bottom: 1px solid $grayColor
   padding: 8px 8px 8px 15px
   cursor: pointer
+  width: 100%
   text-decoration: none
   &:hover,
   &.active
     background-color: $whiteColorSecond
   .btn-trash
-    margin-left: 8px
+    position: absolute
+    top: 0
+    right: 0
+    margin: 12px
+  a
+    display: block
+    width: 100%
 .rooms-item-face
   width: 60px
   height: 60px
