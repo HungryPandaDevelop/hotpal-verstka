@@ -21,119 +21,56 @@
     <!-- header start-->
     <!--include ../blocks/header.pug-->
     <!-- header end-->
-    <div class="controls-panel">
-      <div class="controls-btn controls-chat"><i></i><span>10</span></div>
-      <div class="controls-btn controls-like"><i></i></div>
-      <div class="controls-btn controls-invite"><i></i></div>
-      <div class="controls-btn controls-search"><i></i></div>
-      <div class="controls-btn controls-settings"><i></i></div>
+    <div class="main-full">header</div>
+    <div class="main-full">
+      <h1>Popup</h1>
     </div>
-    <div class="controls-panel-popup">
-      <div class="controls-panel-head">Симпатии</div>
-      <div class="panel-deg panel-deg--active-1"></div>
-      <div class="panel-close"></div>
-      <div class="popup-chat">
-        <div class="chat-popup-header">
-          <div class="link-back"><i></i></div>
-          <div class="chat-popup-face img-cover"><img src="/images/temp/avatar-1.jpg" alt=""></div>
-          <div class="chat-popup-info">
-            <div>
-              <div class="chat-popup-name">Варвара</div>
-              <div class="chat-popup-online">В сети</div>
-            </div>
-            <div class="btn-full"></div>
-          </div>
-        </div>
-        <div class="chat-messages">
-          <div class="messages-container">
-            <div class="messages-item"> 
-              <div class="messages-box">Did you mail me</div>
-              <div class="messages-date">5.54 pm</div>
-            </div>
-            <div class="messages-item--answer"> 
-              <div class="messages-box--answer">Yes I Did...</div>
-              <div class="messages-date">7.54 pm</div>
-            </div>
-            <div class="messages-item"> 
-              <div class="messages-box">Okay, let me check</div>
-              <div class="messages-date">10.54 pm</div>
-            </div>
-            <div class="messages-item"> 
-              <div class="messages-box">Did you mail me</div>
-              <div class="messages-date">5.54 pm</div>
-            </div>
-            <div class="messages-item--answer"> 
-              <div class="messages-box--answer">Yes I Did...</div>
-              <div class="messages-date">7.54 pm</div>
-            </div>
-            <div class="messages-item"> 
-              <div class="messages-box">Okay, let me check</div>
-              <div class="messages-date">10.54 pm</div>
-            </div>
-          </div>
-        </div>
-        <div class="chat-form">
-          <div class="form-container">
-              <textarea class="input-decorate undefined" placeholder="Напишите сообщение..."></textarea>
-          </div>
-          <div class="btn-container">
-              <div class="form-btn-container">
-                <input class="btn btn--blue btn-send" type="submit" value="Отправить">
+      <div class="popup element-show show" data-element="1">
+        <div class="popup-overlay popup-overlay-js"></div>
+        <div class="popup-container"> 
+          <div class="close-btn close-btn--popup close-js"></div> 
+          <div class="form"> 
+            <h3>Заполните анкету</h3>
+            <div class="form main-grid">
+              <div class="input-box col-6">
+                <label>Имя</label>
+                  <input class="input-decorate require" type="text" placeholder="Text">
               </div>
-            <div class="main-full">header</div>
-            <div class="main-full">
-              <h1>Popup</h1>
-            </div>
-              <div class="popup element-show show" data-element="1">
-                <div class="popup-overlay popup-overlay-js"></div>
-                <div class="popup-container"> 
-                  <div class="close-btn close-btn--popup close-js"></div> 
-                  <div class="form"> 
-                    <h3>Заполните анкету</h3>
-                    <div class="form main-grid">
-                      <div class="input-box col-6">
-                        <label>Имя</label>
-                          <input class="input-decorate require" type="text" placeholder="Text">
-                      </div>
-                      <div class="input-box col-6">
-                        <label>Email</label>
-                          <input class="input-decorate require" type="text" placeholder="Text">
-                      </div>
-                      <div class="input-box col-6">
-                        <label>Дата рождения</label>
-                          <input class="input-decorate phone-mask require" type="text" placeholder="date">
-                      </div>
-                      <div class="input-box col-6">
-                        <label>Город</label>
-                          <input class="input-decorate phone-mask require" type="text" placeholder="Phone">
-                      </div>
-                      <div class="input-box col-12">
-                        <label>Пароль</label>
-                          <input class="input-decorate phone-mask require" type="text" placeholder="Phone">
-                      </div>
-                      <div class="input-box col-12">
-                        <label>Пол</label>
-                        <div class="btn-container gender-btns"><a class="btn man-btn active" href="#"><i></i><span>Мужчина</span></a><a class="btn woman-btn" href="#"><i></i><span>Женщина</span></a></div>
-                      </div>
-                      <div class="input-box col-12">
-                        <div class="checkbox agreement">
-                          <label>Согласен (на) на обработку <a href="#">персональных данных </a>
-                            <input type="checkbox" checked><span></span>
-                          </label>
-                        </div>
-                      </div>
-                      <div class="btn-reg-container col-12">
-                          <div class="form-btn-container">
-                            <input class="btn btn--blue" type="submit" value="отправить">
-                          </div>
-                      </div>
-                    </div>
-                  </div>
+              <div class="input-box col-6">
+                <label>Email</label>
+                  <input class="input-decorate require" type="text" placeholder="Text">
+              </div>
+              <div class="input-box col-6">
+                <label>Дата рождения</label>
+                  <input class="input-decorate phone-mask require" type="text" placeholder="date">
+              </div>
+              <div class="input-box col-6">
+                <label>Город</label>
+                  <input class="input-decorate phone-mask require" type="text" placeholder="Phone">
+              </div>
+              <div class="input-box col-12">
+                <label>Пароль</label>
+                  <input class="input-decorate phone-mask require" type="text" placeholder="Phone">
+              </div>
+              <div class="input-box col-12">
+                <label>Пол</label>
+                <div class="btn-container gender-btns"><a class="btn man-btn active" href="#"><i></i><span>Мужчина</span></a><a class="btn woman-btn" href="#"><i></i><span>Женщина</span></a></div>
+              </div>
+              <div class="input-box col-12">
+                <div class="checkbox agreement">
+                  <label>Согласен (на) на обработку <a href="#">персональных данных </a>
+                    <input type="checkbox" checked><span></span>
+                  </label>
                 </div>
               </div>
+              <div class="btn-reg-container col-12">
+                  <div class="form-btn-container">
+                    <input class="btn btn--blue" type="submit" value="отправить">
+                  </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
   </body>
 </html>

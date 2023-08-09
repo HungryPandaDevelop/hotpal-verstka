@@ -1,20 +1,18 @@
 .sympathy-item
-  display: flex
-  gap: 15px
-
+  text-align: center
   h3
     text-align: center
     font-size: $standartSize
     color: $blackColor
   .btn-container
-    margin-top: 15px
+    // margin-top: 15px
 .sympathy-img
   width: 100px
   height: 100px
   position: relative
   overflow: hidden
   border-radius: 100%
-  margin-bottom: 8px
+  display: inline-block
   .img-cover
     @include positionElement(100%,100%)
 .status-sympathy
@@ -25,10 +23,46 @@
   font-weight: 700
   display: inline-block
   color: $whiteColor
-  margin: 0 0 15px
+  vertical-align: middle
+  margin-right: 15px
 .status--see
   background-color: $blueColor
 .status--agree
   background-color: $greenColor
 .status--disagree
   background-color: $redColor
+.sympathy-btn
+  display: inline-block
+  width: 30px
+  height: 30px
+  border: 1px solid $blueColor
+  border-radius: 100%
+  cursor: pointer
+  vertical-align: middle
+  margin: 0 8px
+  &:hover,
+  &.active
+    background-color: $blueColor
+.see-sympathy-btn
+  @include bgImageEl("../images/icons/view-blue.svg")
+  &:hover,
+  &.active
+    background-image: url("../images/icons/view-fill-white.svg")
+.agree-sympathy-btn
+  @include bgImageEl("../images/icons-app/like-blue.svg")
+  &:hover,
+  &.active
+    background-image: url("../images/icons-app/like-white-fill.svg")
+.disagree-sympathy-btn
+  @include bgImageEl("../images/icons-app/dislike-blue.svg", 24px)
+  &:hover,
+  &.active
+    background-image: url("../images/icons-app/dislike-white-fill.svg")
+.trash-sympathy-btn
+  @include bgImageEl("../images/icons/trash-blue.svg", 24px)
+  &:hover
+    background-image: url("../images/icons/trash-white.svg")
+.sympathy-hint
+  font-size: $smallSize
+  color: $grayColor
+  margin: 0 0 8px
